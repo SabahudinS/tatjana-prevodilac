@@ -1,0 +1,185 @@
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: relative;
+            width: 100%;
+        }
+        .navbar {
+            background: linear-gradient(#ed73e7, #9595d3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a.icon {
+            display: none;
+        }
+        .video-container {
+            position: relative;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #about img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background-color: #f4f4f4;
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card img {
+            max-width: 100%;
+        }
+        .card button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input{
+            width: 348px;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+
+        .info{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #f4f4f4;
+        }
+
+        footer {
+            background: linear-gradient(#ed73e7, #0227f4);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .top{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #f4f4f4;
+        }
+
+        #kontakt {
+            background: linear-gradient(#ed73e7, #9595d3);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            }
+        
+        #kontakt>div {
+            flex: 1 1 100%;
+            }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            }
+        
+        @media (min-width: 768px) {
+            #kontakt>div {
+               flex: 1 1 calc(33.333% - 20px);
+                }
+            }
+
+        #about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            }
+            
+        #about>div {
+            flex: 1 1 100%;
+            }
+            
+        @media (min-width: 768px) {
+            #about>div {
+                flex: 1 1 calc(33.333% - 20px);
+                }
+            }
+
+        /* Media Queries for responsiveness */
+        @media only screen and (max-width: 768px) {
+
+            .overlay-text>h1 {
+                font-size: 1em;
+            }
+            .navbar a:not(:first-child) {
+                display: none;
+            }
+            .navbar a.icon {
+                display: block;
+            }
+            .navbar.responsive {
+                position: relative;
+            }
+            .navbar.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navbar.responsive a {
+                display: block;
+                text-align: left;
+            }
+            .container {
+                flex-direction: column;
+            }
+            #kontakt>div {
+                flex: 1 1 calc(33.333% - 20px);
+            }
+
+            .slika{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                font-weight: 600;
+                color: #f4f4f4;
+            }
+        }
